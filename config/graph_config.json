@@ -1,0 +1,15 @@
+{
+    "lr": 1e-4,
+    "batch_size": 64,
+    "mlp_input_dim": 1420,
+    "mlp_hidden_dims": [
+        256,
+        64
+    ],
+    "number_of_epochs": 50,
+    "dropout": 0.0,
+    "weighted_loss": false,
+    "weighted_sampler": true,
+    "average_predictions": false,
+    "double_training": false
+}

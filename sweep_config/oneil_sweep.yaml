@@ -1,0 +1,25 @@
+entity: uoft-research-2023
+project: drug_synergy
+program: fusion_gnn.py
+method: grid
+parameters:
+  dataset_name:
+    values: ["oneil"]
+  fold_number:
+    values: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+  synergy_score:
+    values: ["loewe", "bliss", "hsa", "zip"]
+  num_layers:
+    values: [5, 7] #[2, 4, 6, 8, 10]
+  conv_name:
+    values: ["GINEConv"] #["GINEConv", "GPSConv", "GATConv", "GCNConv"]
+  context_dim:
+    values: [954]
+  use_scheduler:
+    values: [true]
+  inject_before_late_fusion:
+    values: [0, 1, 2, 3]
+  emb_dim:
+    values: [300]
+  lr:
+    values: [1e-5, 5e-5, 1e-4, 5e-4]
